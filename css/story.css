@@ -1,0 +1,31 @@
+
+main {
+  background: #fff;  
+  width: 80vw;
+  margin: 0 auto;
+}
+
+article {
+  display: grid;
+  grid-template-columns: auto;  
+  grid-template-rows: auto;  
+  gap: 1rem;
+}
+
+section {
+  padding:1rem;
+}
+
+
+/* this is the code responsive story */
+
+h1.story:before {
+  content: "Here's where our story begins ...";
+}
+
+@media screen and (min-width: 500px) {
+  h1.story:before {
+    content: "... and here's the next few words ...";
+  }
+}
+
